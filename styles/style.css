@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 950px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.header_nav_ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-height: 80px;
+}
+
+/*MAIN*/
+
+/*SECCION SOBRE MI*/
+.sobreMi {
+    display: flex;
+    width: 70%;
+    max-width: 950px;
+    height: 400px;
+    margin: 1rem auto;
+    background-image: url(/img/foto.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sobreMi_titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 2rem;
+    width: 50%;
+    text-align: center;
+    font-size: 2rem;
+    opacity: 90%
+}
+
+.sobreMi_info {
+    width: 50%;
+    font-size: 2rem;
+    opacity: 70%;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+/*SECCION PPROYECTOS*/
+
+.containerProyectos {
+    display: flex;
+    width: 70%;
+    max-width: 950px;
+    height: 30vh;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.proyectos h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.imagenesProyectos {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.textoProyectos {
+    width: 50%;
+    height: 100%;
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+.proyecto {
+    background-color: red;
+    border: solid black 2px;
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+.proye1 {
+    left: 0px;
+    top: 0px;
+}
+
+.proye2 {
+    left: 80px;
+    top: 80px;
+}
+
+.proye3 {
+    left: 160px;
+    top: 160px;
+}
+
+.proye1:hover,
+.proye2:hover,
+.proye3:hover {
+    z-index: 100;
+    transform: scale(1.2);
+}
+
+/*EXPERIENCIA y FORMACION*/
+
+.empleos,
+.titulos {
+    display: flex;
+    width: 70%;
+    margin: 1rem auto;
+    font-size: 2rem;
+}
+
+.experiencia h2,
+.formacion h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.empleos div,
+.titulos div {
+    margin: 1rem;
+}
+
+/*HABILIDADES*/
+
+.habilidades{
+    width: 70%;
+    margin: 1rem auto;
+}
+
+.habilidades h2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.containerHabilidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.html, .css, .js, .sql{
+    width: 30rem;
+    height: 6rem;
+}
+
+.containerHabilidades p{
+    margin: 1rem;
+    height: 1rem;
+}
+
+.barrasHtml, .barrasCss, .barrasJs, .barrasSql{
+    position: relative;
+}
+.barra{
+    width: 20rem;
+    background-color: darkblue;
+    position: absolute;
+}
+
+.nivelHtml, .nivelCss, .nivelJs, .nivelSql{
+    background-color: crimson;
+    position: absolute;
+    z-index: 10;
+
+}
+
+.nivelHtml{
+    width: 14rem;
+}
+
+.nivelCss{
+    width: 11rem;
+}
+
+.nivelJs{
+    width: 7rem;
+}
+
+.nivelSql{
+    width: 8rem;
+}
+
+/*FOOTER*/
+
+.footer-menu {
+    display: flex;
+    width: 70%;
+    height: 8rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-menu-item {
+    margin: 2rem;
+}
+
+.icono {
+    font-size: 3rem;
+}
+
+.icono:hover {
+    transform: scale(1.2);
+}
